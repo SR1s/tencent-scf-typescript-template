@@ -1,0 +1,17 @@
+{
+  "name": "scf-ts-template",
+  "version": "1.0.0",
+  "description": "scf with typescript, all source code packed and upload to cloud console",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tsc --watch",
+    "build": "npx tsc",
+    "deploy": "npm run build && serverless deploy",
+    "test": ""
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^4.6.2"
+  }
+}

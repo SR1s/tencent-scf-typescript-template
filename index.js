@@ -6,5 +6,7 @@
  */
 exports.main_handler = async (event, context) => {
     const app = require('./dist/index.js')
-    await app.main_handler(event, context);
+    return {
+        data: await app.main_handler(event, context)
+    }
 }
